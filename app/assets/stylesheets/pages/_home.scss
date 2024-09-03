@@ -3,8 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #dbb9b0;
-  /*overflow: hidden;*/
+  background-color: #c7a298;
 }
 
 .centered-container {
@@ -13,7 +12,7 @@ html, body {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: #dbb9b0;
+  background-color: #c7a298;
 }
 
 .centered-image {
@@ -50,5 +49,101 @@ iframe {
     width: 70%;
     max-width: 250px;
     max-height: 100px;
+  }
+}
+
+.pin, .carta {
+  width: 3vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+/* Posicionamento específico para o Pin */
+.pin {
+  top: 75%; /* Ajustado para dar espaço ao texto */
+  left: 45%;
+}
+
+/* Posicionamento específico para a Carta */
+.carta {
+  top: 75%; /* Ajustado para dar espaço ao texto */
+  left: 52%;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .pin, .carta {
+    width: 5vw;
+  }
+  .pin {
+    left: 42%;
+  }
+  .carta {
+    left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pin, .carta {
+    width: 8vw;
+  }
+  .pin {
+    left: 40%;
+  }
+  .carta {
+    left: 48%;
+  }
+}
+
+/* Estilos para as caixas de texto */
+.pin-text, .carta-text {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #A9895F; /* Cor do texto */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  z-index: 4; /* Sobrepõe a imagem */
+  width: auto;
+  white-space: nowrap; /* Impede que o texto quebre */
+}
+
+/* Posicionamento específico para o texto do Pin */
+.pin-text {
+  top: 85%; /* Posicionado logo abaixo do ícone */
+  left: 43.5%; /* Ajustado para centralização */
+}
+
+/* Posicionamento específico para o texto da Carta */
+.carta-text {
+  top: 85%; /* Posicionado logo abaixo do ícone */
+  left: 50%; /* Ajustado para centralização */
+}
+
+/* Media Queries para ajustar o texto */
+@media (max-width: 768px) {
+  .pin-text, .carta-text {
+    font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+  .pin-text {
+    left: 40%;
+  }
+  .carta-text {
+    left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pin-text, .carta-text {
+    font-size: 10px; /* Ajusta o tamanho da fonte para telas ainda menores */
+  }
+  .pin-text {
+    left: 38%;
+  }
+  .carta-text {
+    left: 48%;
   }
 }
