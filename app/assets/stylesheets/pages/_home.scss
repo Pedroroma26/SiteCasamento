@@ -62,13 +62,13 @@ iframe {
 }
 
 .pin-container {
-  top: 75%; /* Ajuste a posição vertical do contêiner */
+  top: 80%; /* Ajuste a posição vertical do contêiner */
   left: auto; /* Ajuste a posição horizontal do contêiner */
   margin-right: 15%;
 }
 
 .carta-container {
-  top: 75%; /* Ajuste a posição vertical do contêiner */
+  top:80%; /* Ajuste a posição vertical do contêiner */
   left: auto; /* Ajuste a posição horizontal do contêiner */
   margin-left: 15%;
 }
@@ -138,6 +138,6 @@ iframe {
 /* Novos estilos para melhorar a responsividade em dispositivos móveis */
 @media (max-width: 480px) {
   .pin-container, .carta-container {
-    top: 65%; /* Ajuste a posição vertical para 65% da altura da tela */
+    top: 70%; /* Ajuste a posição vertical para 65% da altura da tela */
   }
 }
