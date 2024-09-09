@@ -62,39 +62,39 @@ iframe {
 }
 
 .pin-container {
-  top: 80%; /* Ajuste a posição vertical do contêiner */
-  left: auto; /* Ajuste a posição horizontal do contêiner */
+  top: 72vh; /* Ajuste a posição vertical do contêiner */
+  left: auto;
   margin-right: 15%;
 }
 
 .carta-container {
-  top:80%; /* Ajuste a posição vertical do contêiner */
-  left: auto; /* Ajuste a posição horizontal do contêiner */
+  top: 72vh; /* Ajuste a posição vertical do contêiner */
+  left: auto;
   margin-left: 15%;
 }
 
 .pin, .carta {
-  width: 40px; /* Ajuste o tamanho das imagens */
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 @media (max-width: 768px) {
   .pin, .carta {
-    width: 30px; /* Ajuste o tamanho das imagens em tablets */
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .pin, .carta {
-    width: 25px; /* Ajuste o tamanho das imagens em celulares */
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .pin-text, .carta-text {
-  margin-top: 5px; /* Ajuste a distância entre a imagem e o texto */
+  margin-top: 5px;
   padding: 2px 5px;
   border-radius: 8px;
   color: #b48b58;
@@ -113,15 +113,15 @@ iframe {
 
 @media (max-width: 768px) {
   .pin-text, .carta-text {
-    font-size: 20px; /* Ajuste o tamanho da fonte em tablets */
-    margin-top: 4px; /* Ajuste a distância entre a imagem e o texto em tablets */
+    font-size: 20px;
+    margin-top: 4px;
   }
 }
 
 @media (max-width: 425px) {
   .pin-text, .carta-text {
-    font-size: 10px; /* Ajuste o tamanho da fonte em celulares */
-    margin-top: 3px; /* Ajuste a distância entre a imagem e o texto em celulares */
+    font-size: 10px;
+    margin-top: 3px;
   }
 }
 
@@ -132,12 +132,5 @@ iframe {
   }
   .pin-text, .carta-text {
     font-size: 25px;
-  }
-}
-
-/* Novos estilos para melhorar a responsividade em dispositivos móveis */
-@media (max-width: 480px) {
-  .pin-container, .carta-container {
-    top: 70%; /* Ajuste a posição vertical para 65% da altura da tela */
   }
 }
