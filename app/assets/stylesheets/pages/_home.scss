@@ -97,9 +97,9 @@ iframe {
   margin-top: 5px; /* Ajuste a distância entre a imagem e o texto */
   padding: 2px 5px;
   border-radius: 8px;
-  color: #A9895F;
+  color: #b48b58;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", serif;
   text-align: center;
   text-decoration: none;
 }
@@ -113,12 +113,12 @@ iframe {
 
 @media (max-width: 768px) {
   .pin-text, .carta-text {
-    font-size: 12px; /* Ajuste o tamanho da fonte em tablets */
+    font-size: 20px; /* Ajuste o tamanho da fonte em tablets */
     margin-top: 4px; /* Ajuste a distância entre a imagem e o texto em tablets */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .pin-text, .carta-text {
     font-size: 10px; /* Ajuste o tamanho da fonte em celulares */
     margin-top: 3px; /* Ajuste a distância entre a imagem e o texto em celulares */
@@ -131,6 +131,13 @@ iframe {
     height: 60px;
   }
   .pin-text, .carta-text {
-    font-size: 16px;
+    font-size: 25px;
+  }
+}
+
+/* Novos estilos para melhorar a responsividade em dispositivos móveis */
+@media (max-width: 480px) {
+  .pin-container, .carta-container {
+    top: 65%; /* Ajuste a posição vertical para 65% da altura da tela */
   }
 }
