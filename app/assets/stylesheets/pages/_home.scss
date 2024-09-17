@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -17,7 +18,7 @@ html, body {
 .centered-image {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: coverdsad;
 }
 
 iframe {
@@ -59,7 +60,8 @@ iframe {
   }
 }
 
-.pin-container, .carta-container {
+.pin-container,
+.carta-container {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -79,37 +81,47 @@ iframe {
   margin-left: 15%;
 }
 
-.pin, .carta {
+.pin,
+.carta {
   width: 50px;
   height: 50px;
   object-fit: contain;
 }
 
 @media (min-width: 1920px) {
-  .pin, .carta {
+
+  .pin,
+  .carta {
     width: 60px;
     height: 60px;
   }
-  .pin-text, .carta-text {
+
+  .pin-text,
+  .carta-text {
     font-size: 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .pin, .carta {
+
+  .pin,
+  .carta {
     width: 40px;
     height: 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .pin, .carta {
+
+  .pin,
+  .carta {
     width: 30px;
     height: 30px;
   }
 }
 
-.pin-text, .carta-text {
+.pin-text,
+.carta-text {
   margin-top: 5px;
   padding: 2px 5px;
   border-radius: 8px;
@@ -120,7 +132,8 @@ iframe {
   text-decoration: none;
 }
 
-.pin-container a, .carta-container a {
+.pin-container a,
+.carta-container a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,24 +141,32 @@ iframe {
 }
 
 @media (min-width: 1920px) {
-  .pin, .carta {
+
+  .pin,
+  .carta {
     width: 60px;
     height: 60px;
   }
-  .pin-text, .carta-text {
+
+  .pin-text,
+  .carta-text {
     font-size: 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .pin-text, .carta-text {
+
+  .pin-text,
+  .carta-text {
     font-size: 12px;
     margin-top: 4px;
   }
 }
 
 @media (max-width: 425px) {
-  .pin-text, .carta-text {
+
+  .pin-text,
+  .carta-text {
     font-size: 10px;
     margin-top: 3px;
   }
