@@ -171,3 +171,53 @@ iframe {
     margin-top: 3px;
   }
 }
+
+/* Ajustes para iPhone 15 (1179x2556) */
+@media (min-width: 1179px) and (max-width: 1179px) and (min-height: 2556px) and (max-height: 2556px) {
+
+  .pin-container {
+    top: 66vh;
+    left: 25%;
+  }
+
+  .carta-container {
+    top: 66vh;
+    right: 25%;
+  }
+
+  .pin,
+  .carta {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pin-text,
+  .carta-text {
+    font-size: 40px;
+  }
+}
+
+/* Ajustes para Samsung S24+ (1440x3120) */
+@media (min-width: 1440px) and (max-width: 1440px) and (min-height: 3120px) and (max-height: 3120px) {
+
+  .pin-container {
+    top: 66vh;
+    left: 25%;
+  }
+
+  .carta-container {
+    top: 66vh;
+    right: 25%;
+  }
+
+  .pin,
+  .carta {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pin-text,
+  .carta-text {
+    font-size: 45px;
+  }
+}
